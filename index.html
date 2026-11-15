@@ -2,38 +2,70 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BengalBridge Technologies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BengalBridge Technologies | Global Digital Innovation</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#17243a}
-header,footer{background:#10264a;color:white;padding:25px;text-align:center}
-.hero{background:linear-gradient(135deg,#10264a,#1769aa);color:white;text-align:center;padding:80px 20px}
-section{text-align:center;padding:35px 15px}
-a.button{display:inline-block;background:#ffbd45;color:#10264a;padding:15px 25px;border-radius:8px;text-decoration:none;font-weight:bold}
-.card{background:white;margin:15px auto;padding:20px;max-width:300px;border-radius:12px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#17243a;background:#f5f8ff}
+header{background:#0b1f42;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:23px;font-weight:bold}
+nav a{color:white;text-decoration:none;margin:10px}
+.hero{padding:100px 20px;text-align:center;color:white;background:linear-gradient(120deg,#081b3d,#1266b2,#23a0c5)}
+.hero h1{font-size:clamp(32px,5vw,55px);margin:0 0 20px}
+.hero p{font-size:19px;line-height:1.7}
+.btn{display:inline-block;background:#ffd166;color:#10264a;padding:15px 25px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px}
+section{padding:65px 7%;text-align:center}
+section h2{font-size:32px;color:#103568}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:30px}
+.card{background:white;padding:30px 22px;border-radius:15px;box-shadow:0 5px 22px #10264a12}
+.card h3{color:#1769aa}
+.about{background:white}
+footer{background:#091b38;color:white;text-align:center;padding:30px}
+footer p{line-height:1.7}
+@media(max-width:600px){header{justify-content:center;text-align:center}nav{margin-top:15px}.hero{padding:70px 18px}}
 </style>
 </head>
 <body>
 <header>
-<h2>BengalBridge Technologies</h2>
-<p>Your Gateway to Global Opportunities</p>
+<div class="logo">BengalBridge Technologies</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
-<div class="hero">
-<h1>Welcome to BengalBridge</h1>
-<p>Building digital solutions through technology.</p>
-<a class="button" href="https://ai.studio/apps/339ccf1d-c044-490e-833e-2b0494bfbc4b">Explore BengalBridge AI</a>
+
+<div class="hero" id="home">
+<h1>Your Gateway to Global Opportunities</h1>
+<p>Connecting ideas, technology and opportunities.<br>Building useful digital solutions for a connected world.</p>
+<a class="btn" href="https://ai.studio/apps/339ccf1d-c044-490e-833e-2b0494bfbc4b">Explore BengalBridge AI</a>
+<a class="btn" href="#about">Discover Us</a>
 </div>
-<section>
-<h2>About Us</h2>
+
+<section class="about" id="about">
+<h2>About BengalBridge</h2>
 <p>BengalBridge Technologies is an independent early-stage technology initiative based in Satkhira, Bangladesh.</p>
-<p>Founder: Md Abdur Rahim</p>
+<p><strong>Founder:</strong> Md Abdur Rahim</p>
+<p>Our vision is to explore technology, develop practical digital solutions and connect people with global opportunities.</p>
 </section>
-<section>
-<h2>Our Focus</h2>
-<div class="card"><h3>AI Solutions</h3><p>Exploring practical AI tools.</p></div>
-<div class="card"><h3>Web Development</h3><p>Creating responsive websites.</p></div>
-<div class="card"><h3>Digital Innovation</h3><p>Turning ideas into digital projects.</p></div>
+
+<section id="services">
+<h2>Our Focus Areas</h2>
+<div class="cards">
+<div class="card"><h3>Artificial Intelligence</h3><p>Exploring practical AI-powered tools and digital experiences.</p></div>
+<div class="card"><h3>Web Development</h3><p>Creating responsive and accessible websites.</p></div>
+<div class="card"><h3>Digital Innovation</h3><p>Turning ideas into useful digital projects.</p></div>
+</div>
 </section>
+
+<section id="contact">
+<h2>Connect With Us</h2>
+<p>Based in Satkhira, Bangladesh.</p>
+<p>Explore our AI project to discover what we are building.</p>
+<a class="btn" href="https://ai.studio/apps/339ccf1d-c044-490e-833e-2b0494bfbc4b">Visit BengalBridge AI</a>
+</section>
+
 <footer>
 <p>© 2026 BengalBridge Technologies</p>
 <p>Independent early-stage initiative. Not yet legally registered.</p>
