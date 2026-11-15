@@ -2,29 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BengalBridge Technologies is an independent early-stage technology initiative based in Bangladesh.">
 <title>BengalBridge Technologies</title>
+
 <style>
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;font-family:Arial,sans-serif;color:#17243a;background:#f5f8ff}
-header{background:#0b1f42;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:22px;font-weight:bold}
-nav{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
-nav a{color:white;text-decoration:none}
-button,.btn{background:#ffd166;color:#10264a;padding:12px 18px;border:0;border-radius:8px;text-decoration:none;font-weight:bold;cursor:pointer}
-.hero{padding:90px 20px;text-align:center;color:white;background:linear-gradient(120deg,#081b3d,#1266b2,#23a0c5)}
-.hero h1{font-size:clamp(32px,5vw,55px)}
-.hero p{font-size:19px;line-height:1.7}
-section{padding:60px 7%;text-align:center}
+header{background:#0b1f42;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:21px;font-weight:bold}
+nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:15px}
+button,.btn{background:#ffd166;color:#10264a;padding:12px 20px;border:0;border-radius:8px;text-decoration:none;font-weight:bold;cursor:pointer}
+.hero{padding:95px 20px;text-align:center;color:white;background:linear-gradient(120deg,#081b3d,#1266b2,#23a0c5)}
+.hero h1{font-size:clamp(32px,5vw,55px);margin:0 0 20px}
+.hero p{font-size:18px;line-height:1.8;max-width:750px;margin:0 auto 25px}
+section{padding:65px 7%;text-align:center}
 section h2{font-size:30px;color:#103568}
 .about{background:white}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:30px}
 .card{background:white;padding:30px 22px;border-radius:15px;box-shadow:0 5px 22px #10264a12}
 .card h3{color:#1769aa}
-footer{background:#091b38;color:white;text-align:center;padding:30px}
-@media(max-width:600px){header{justify-content:center;gap:15px}nav{justify-content:center}.hero{padding:65px 18px}}
+.contact{background:white}
+.contact-form{max-width:520px;margin:30px auto;text-align:left}
+.contact-form label{display:block;font-weight:bold;margin-top:17px}
+.contact-form input,.contact-form textarea{width:100%;padding:14px;margin-top:8px;border:1px solid #ccd5e2;border-radius:8px;font-size:15px}
+.contact-form button{margin-top:20px;width:100%}
+footer{background:#091b38;color:white;text-align:center;padding:30px;line-height:1.8}
+@media(max-width:600px){
+header{justify-content:center;text-align:center}
+nav{justify-content:center}
+.hero{padding:65px 18px}
+section{padding:45px 6%}
+}
 </style>
 </head>
+
 <body>
 
 <header>
@@ -34,7 +48,7 @@ footer{background:#091b38;color:white;text-align:center;padding:30px}
 <a href="#about" data-en="About" data-bn="পরিচিতি">About</a>
 <a href="#services" data-en="Services" data-bn="সেবাসমূহ">Services</a>
 <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
-<button onclick="changeLanguage()" id="langButton">বাংলা</button>
+<button type="button" id="langButton" onclick="changeLanguage()">বাংলা</button>
 </nav>
 </header>
 
@@ -68,39 +82,22 @@ footer{background:#091b38;color:white;text-align:center;padding:30px}
 </div>
 </div>
 </section>
-<form action="https://formsubmit.co/mcdiagnostic2024@gmail.com" method="POST" style="max-width:500px;margin:25px auto;text-align:left">
 
-<input type="hidden" name="_subject" value="New BengalBridge Website Message">
-
-<label data-en="Your Name" data-bn="আপনার নাম">Your Name</label>
-<input type="text" name="name" required data-en-placeholder="Your Name" data-bn-placeholder="আপনার নাম লিখুন" placeholder="Your Name" style="width:100%;padding:13px;margin:8px 0 18px;border:1px solid #ccc;border-radius:7px">
-
-<label data-en="Your Email" data-bn="আপনার ইমেইল">Your Email</label>
-<input type="email" name="email" required data-en-placeholder="Your Email" data-bn-placeholder="আপনার ইমেইল লিখুন" placeholder="Your Email" style="width:100%;padding:13px;margin:8px 0 18px;border:1px solid #ccc;border-radius:7px">
-
-<label data-en="Your Message" data-bn="আপনার বার্তা">Your Message</label>
-<textarea name="message" required data-en-placeholder="Write your message" data-bn-placeholder="আপনার বার্তা লিখুন" placeholder="Write your message" rows="5" style="width:100%;padding:13px;margin:8px 0 18px;border:1px solid #ccc;border-radius:7px"></textarea>
-
-<button type="submit" data-en="Send Message" data-bn="বার্তা পাঠান">Send Message</button>
-</form>
-
-<section id="contact">
+<section class="contact" id="contact">
 <h2 data-en="Connect With Us" data-bn="আমাদের সঙ্গে যোগাযোগ করুন">Connect With Us</h2>
-
 <p data-en="Based in Satkhira, Bangladesh." data-bn="অবস্থান: সাতক্ষীরা, বাংলাদেশ।">Based in Satkhira, Bangladesh.</p>
 
-<form action="https://formsubmit.co/mcdiagnostic2024@gmail.com" method="POST" style="max-width:500px;margin:25px auto;text-align:left">
-
+<form class="contact-form" action="https://formsubmit.co/mcdiagnostic2024@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="New BengalBridge Website Message">
 
 <label data-en="Your Name" data-bn="আপনার নাম">Your Name</label>
-<input type="text" name="name" required placeholder="Your Name" style="width:100%;padding:13px;margin:8px 0 18px;border:1px solid #ccc;border-radius:7px">
+<input type="text" name="name" required data-en-placeholder="Enter your name" data-bn-placeholder="আপনার নাম লিখুন" placeholder="Enter your name">
 
 <label data-en="Your Email" data-bn="আপনার ইমেইল">Your Email</label>
-<input type="email" name="email" required placeholder="Your Email" style="width:100%;padding:13px;margin:8px 0 18px;border:1px solid #ccc;border-radius:7px">
+<input type="email" name="email" required data-en-placeholder="Enter your email" data-bn-placeholder="আপনার ইমেইল লিখুন" placeholder="Enter your email">
 
 <label data-en="Your Message" data-bn="আপনার বার্তা">Your Message</label>
-<textarea name="message" required placeholder="Write your message" rows="5" style="width:100%;padding:13px;margin:8px 0 18px;border:1px solid #ccc;border-radius:7px"></textarea>
+<textarea name="message" rows="5" required data-en-placeholder="Write your message" data-bn-placeholder="আপনার বার্তা লিখুন" placeholder="Write your message"></textarea>
 
 <button type="submit" data-en="Send Message" data-bn="বার্তা পাঠান">Send Message</button>
 </form>
@@ -114,6 +111,7 @@ footer{background:#091b38;color:white;text-align:center;padding:30px}
 
 <script>
 let currentLanguage="en";
+
 function changeLanguage(){
  currentLanguage=currentLanguage==="en"?"bn":"en";
  document.documentElement.lang=currentLanguage;
@@ -126,14 +124,8 @@ function changeLanguage(){
   element.placeholder=element.getAttribute("data-"+currentLanguage+"-placeholder");
  });
 
- document.getElementById("langButton").textContent=currentLanguage==="en"?"বাংলা":"English";
-}{
- currentLanguage=currentLanguage==="en"?"bn":"en";
- document.documentElement.lang=currentLanguage;
- document.querySelectorAll("[data-en]").forEach(element=>{
-  element.textContent=element.getAttribute("data-"+currentLanguage);
- });
- document.getElementById("langButton").textContent=currentLanguage==="en"?"বাংলা":"English";
+ document.getElementById("langButton").textContent=
+ currentLanguage==="en"?"বাংলা":"English";
 }
 </script>
 
