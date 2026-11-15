@@ -3,73 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BengalBridge Technologies | Global Digital Innovation</title>
+<title>BengalBridge Technologies</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;color:#17243a;background:#f5f8ff}
 header{background:#0b1f42;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:23px;font-weight:bold}
-nav a{color:white;text-decoration:none;margin:10px}
-.hero{padding:100px 20px;text-align:center;color:white;background:linear-gradient(120deg,#081b3d,#1266b2,#23a0c5)}
-.hero h1{font-size:clamp(32px,5vw,55px);margin:0 0 20px}
+.logo{font-size:22px;font-weight:bold}
+nav{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+nav a{color:white;text-decoration:none}
+button,.btn{background:#ffd166;color:#10264a;padding:12px 18px;border:0;border-radius:8px;text-decoration:none;font-weight:bold;cursor:pointer}
+.hero{padding:90px 20px;text-align:center;color:white;background:linear-gradient(120deg,#081b3d,#1266b2,#23a0c5)}
+.hero h1{font-size:clamp(32px,5vw,55px)}
 .hero p{font-size:19px;line-height:1.7}
-.btn{display:inline-block;background:#ffd166;color:#10264a;padding:15px 25px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px}
-section{padding:65px 7%;text-align:center}
-section h2{font-size:32px;color:#103568}
+section{padding:60px 7%;text-align:center}
+section h2{font-size:30px;color:#103568}
+.about{background:white}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:30px}
 .card{background:white;padding:30px 22px;border-radius:15px;box-shadow:0 5px 22px #10264a12}
 .card h3{color:#1769aa}
-.about{background:white}
 footer{background:#091b38;color:white;text-align:center;padding:30px}
-footer p{line-height:1.7}
-@media(max-width:600px){header{justify-content:center;text-align:center}nav{margin-top:15px}.hero{padding:70px 18px}}
+@media(max-width:600px){header{justify-content:center;gap:15px}nav{justify-content:center}.hero{padding:65px 18px}}
 </style>
 </head>
 <body>
+
 <header>
 <div class="logo">BengalBridge Technologies</div>
 <nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
+<a href="#home" data-en="Home" data-bn="হোম">Home</a>
+<a href="#about" data-en="About" data-bn="পরিচিতি">About</a>
+<a href="#services" data-en="Services" data-bn="সেবাসমূহ">Services</a>
+<a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+<button onclick="changeLanguage()" id="langButton">বাংলা</button>
 </nav>
 </header>
 
 <div class="hero" id="home">
-<h1>Your Gateway to Global Opportunities</h1>
-<p>Connecting ideas, technology and opportunities.<br>Building useful digital solutions for a connected world.</p>
-<a class="btn" href="https://ai.studio/apps/339ccf1d-c044-490e-833e-2b0494bfbc4b">Explore BengalBridge AI</a>
-<a class="btn" href="#about">Discover Us</a>
+<h1 data-en="Your Gateway to Global Opportunities" data-bn="বিশ্বব্যাপী সুযোগের প্রবেশদ্বার">Your Gateway to Global Opportunities</h1>
+<p data-en="Connecting ideas, technology and opportunities. Building useful digital solutions for a connected world." data-bn="ধারণা, প্রযুক্তি ও সম্ভাবনার সংযোগ। সংযুক্ত বিশ্বের জন্য কার্যকর ডিজিটাল সমাধান তৈরি।">Connecting ideas, technology and opportunities. Building useful digital solutions for a connected world.</p>
+<a class="btn" href="https://ai.studio/apps/339ccf1d-c044-490e-833e-2b0494bfbc4b" data-en="Explore BengalBridge AI" data-bn="BengalBridge AI দেখুন">Explore BengalBridge AI</a>
 </div>
 
 <section class="about" id="about">
-<h2>About BengalBridge</h2>
-<p>BengalBridge Technologies is an independent early-stage technology initiative based in Satkhira, Bangladesh.</p>
-<p><strong>Founder:</strong> Md Abdur Rahim</p>
-<p>Our vision is to explore technology, develop practical digital solutions and connect people with global opportunities.</p>
+<h2 data-en="About BengalBridge" data-bn="BengalBridge সম্পর্কে">About BengalBridge</h2>
+<p data-en="BengalBridge Technologies is an independent early-stage technology initiative based in Satkhira, Bangladesh." data-bn="BengalBridge Technologies বাংলাদেশের সাতক্ষীরাভিত্তিক একটি স্বাধীন প্রাথমিক পর্যায়ের প্রযুক্তি উদ্যোগ।">BengalBridge Technologies is an independent early-stage technology initiative based in Satkhira, Bangladesh.</p>
+<p><strong data-en="Founder:" data-bn="প্রতিষ্ঠাতা:">Founder:</strong> Md Abdur Rahim</p>
+<p data-en="Our vision is to explore technology, develop practical digital solutions and connect people with global opportunities." data-bn="আমাদের লক্ষ্য প্রযুক্তি নিয়ে কাজ করা, কার্যকর ডিজিটাল সমাধান তৈরি করা এবং মানুষকে বৈশ্বিক সুযোগের সঙ্গে যুক্ত করা।">Our vision is to explore technology, develop practical digital solutions and connect people with global opportunities.</p>
 </section>
 
 <section id="services">
-<h2>Our Focus Areas</h2>
+<h2 data-en="Our Focus Areas" data-bn="আমাদের কাজের ক্ষেত্র">Our Focus Areas</h2>
 <div class="cards">
-<div class="card"><h3>Artificial Intelligence</h3><p>Exploring practical AI-powered tools and digital experiences.</p></div>
-<div class="card"><h3>Web Development</h3><p>Creating responsive and accessible websites.</p></div>
-<div class="card"><h3>Digital Innovation</h3><p>Turning ideas into useful digital projects.</p></div>
+<div class="card">
+<h3 data-en="Artificial Intelligence" data-bn="কৃত্রিম বুদ্ধিমত্তা">Artificial Intelligence</h3>
+<p data-en="Exploring practical AI-powered tools and digital experiences." data-bn="কৃত্রিম বুদ্ধিমত্তাভিত্তিক কার্যকর টুল ও ডিজিটাল অভিজ্ঞতা তৈরি নিয়ে কাজ।">Exploring practical AI-powered tools and digital experiences.</p>
+</div>
+<div class="card">
+<h3 data-en="Web Development" data-bn="ওয়েব ডেভেলপমেন্ট">Web Development</h3>
+<p data-en="Creating responsive and accessible websites." data-bn="সবার ব্যবহারের উপযোগী ও মোবাইল-সমর্থিত ওয়েবসাইট তৈরি।">Creating responsive and accessible websites.</p>
+</div>
+<div class="card">
+<h3 data-en="Digital Innovation" data-bn="ডিজিটাল উদ্ভাবন">Digital Innovation</h3>
+<p data-en="Turning ideas into useful digital projects." data-bn="নতুন ধারণাকে কার্যকর ডিজিটাল প্রকল্পে রূপ দেওয়া।">Turning ideas into useful digital projects.</p>
+</div>
 </div>
 </section>
 
 <section id="contact">
-<h2>Connect With Us</h2>
-<p>Based in Satkhira, Bangladesh.</p>
-<p>Explore our AI project to discover what we are building.</p>
-<a class="btn" href="https://ai.studio/apps/339ccf1d-c044-490e-833e-2b0494bfbc4b">Visit BengalBridge AI</a>
+<h2 data-en="Connect With Us" data-bn="আমাদের সঙ্গে যোগাযোগ করুন">Connect With Us</h2>
+<p data-en="Based in Satkhira, Bangladesh." data-bn="অবস্থান: সাতক্ষীরা, বাংলাদেশ।">Based in Satkhira, Bangladesh.</p>
+<a class="btn" href="https://ai.studio/apps/339ccf1d-c044-490e-833e-2b0494bfbc4b" data-en="Visit BengalBridge AI" data-bn="BengalBridge AI দেখুন">Visit BengalBridge AI</a>
 </section>
 
 <footer>
 <p>© 2026 BengalBridge Technologies</p>
-<p>Independent early-stage initiative. Not yet legally registered.</p>
-<p>Satkhira, Bangladesh</p>
+<p data-en="Independent early-stage initiative. Not yet legally registered." data-bn="স্বাধীন প্রাথমিক পর্যায়ের উদ্যোগ। এখনো আইনগতভাবে নিবন্ধিত নয়।">Independent early-stage initiative. Not yet legally registered.</p>
+<p data-en="Satkhira, Bangladesh" data-bn="সাতক্ষীরা, বাংলাদেশ">Satkhira, Bangladesh</p>
 </footer>
+
+<script>
+let currentLanguage="en";
+function changeLanguage(){
+ currentLanguage=currentLanguage==="en"?"bn":"en";
+ document.documentElement.lang=currentLanguage;
+ document.querySelectorAll("[data-en]").forEach(element=>{
+  element.textContent=element.getAttribute("data-"+currentLanguage);
+ });
+ document.getElementById("langButton").textContent=currentLanguage==="en"?"বাংলা":"English";
+}
+</script>
+
 </body>
 </html>
